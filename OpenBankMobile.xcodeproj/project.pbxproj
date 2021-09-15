@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2F671A44D4EFD12054B0117F /* Pods_OpenBankMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDBB7E3DCFC62DEEF5533BC /* Pods_OpenBankMobile.framework */; };
+		6CADC9FDBFF4CFE7A09F216F /* Pods_OpenBankMobile_OpenBankMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */; };
 		9CA066D626F24DE00008E961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D526F24DE00008E961 /* AppDelegate.swift */; };
 		9CA066D826F24DE00008E961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D726F24DE00008E961 /* SceneDelegate.swift */; };
 		9CA066DA26F24DE00008E961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D926F24DE00008E961 /* ViewController.swift */; };
@@ -15,6 +17,7 @@
 		9CA066E226F24DE20008E961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA066E026F24DE20008E961 /* LaunchScreen.storyboard */; };
 		9CA066ED26F24DE20008E961 /* OpenBankMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066EC26F24DE20008E961 /* OpenBankMobileTests.swift */; };
 		9CA066F826F24DE20008E961 /* OpenBankMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066F726F24DE20008E961 /* OpenBankMobileUITests.swift */; };
+		DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +38,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobileTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E7C894A4E648A62BD91BF24 /* Pods-OpenBankMobileTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobileTests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankMobileTests/Pods-OpenBankMobileTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2123E935F2997DD446E461B7 /* Pods-OpenBankMobile.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobile.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankMobile/Pods-OpenBankMobile.debug.xcconfig"; sourceTree = "<group>"; };
+		37971A0C8CD2B3F7397E00F3 /* Pods-OpenBankMobile.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobile.release.xcconfig"; path = "Target Support Files/Pods-OpenBankMobile/Pods-OpenBankMobile.release.xcconfig"; sourceTree = "<group>"; };
+		47E53C19611C9AA9AD0A2B58 /* Pods-OpenBankMobile-OpenBankMobileUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobile-OpenBankMobileUITests.release.xcconfig"; path = "Target Support Files/Pods-OpenBankMobile-OpenBankMobileUITests/Pods-OpenBankMobile-OpenBankMobileUITests.release.xcconfig"; sourceTree = "<group>"; };
+		6DDBB7E3DCFC62DEEF5533BC /* Pods_OpenBankMobile.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7C01C0DE31614B989CA94B16 /* Pods-OpenBankMobileTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobileTests.release.xcconfig"; path = "Target Support Files/Pods-OpenBankMobileTests/Pods-OpenBankMobileTests.release.xcconfig"; sourceTree = "<group>"; };
+		8D6AD4406DED9B402E393B5E /* Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankMobile-OpenBankMobileUITests/Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA066D226F24DE00008E961 /* OpenBankMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBankMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA066D526F24DE00008E961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9CA066D726F24DE00008E961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +60,7 @@
 		9CA066F326F24DE20008E961 /* OpenBankMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA066F726F24DE20008E961 /* OpenBankMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankMobileUITests.swift; sourceTree = "<group>"; };
 		9CA066F926F24DE20008E961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile_OpenBankMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2F671A44D4EFD12054B0117F /* Pods_OpenBankMobile.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6CADC9FDBFF4CFE7A09F216F /* Pods_OpenBankMobile_OpenBankMobileUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				9CA066EB26F24DE20008E961 /* OpenBankMobileTests */,
 				9CA066F626F24DE20008E961 /* OpenBankMobileUITests */,
 				9CA066D326F24DE00008E961 /* Products */,
+				C31292F02F4EF7EC09F47E49 /* Pods */,
+				C13478F9BD02DCA06B487464 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = OpenBankMobileUITests;
 			sourceTree = "<group>";
 		};
+		C13478F9BD02DCA06B487464 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6DDBB7E3DCFC62DEEF5533BC /* Pods_OpenBankMobile.framework */,
+				F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */,
+				0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C31292F02F4EF7EC09F47E49 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				2123E935F2997DD446E461B7 /* Pods-OpenBankMobile.debug.xcconfig */,
+				37971A0C8CD2B3F7397E00F3 /* Pods-OpenBankMobile.release.xcconfig */,
+				8D6AD4406DED9B402E393B5E /* Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig */,
+				47E53C19611C9AA9AD0A2B58 /* Pods-OpenBankMobile-OpenBankMobileUITests.release.xcconfig */,
+				1E7C894A4E648A62BD91BF24 /* Pods-OpenBankMobileTests.debug.xcconfig */,
+				7C01C0DE31614B989CA94B16 /* Pods-OpenBankMobileTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA066FC26F24DE20008E961 /* Build configuration list for PBXNativeTarget "OpenBankMobile" */;
 			buildPhases = (
+				8ACD43EF7D528E258A042451 /* [CP] Check Pods Manifest.lock */,
 				9CA066CE26F24DE00008E961 /* Sources */,
 				9CA066CF26F24DE00008E961 /* Frameworks */,
 				9CA066D026F24DE00008E961 /* Resources */,
+				6EBE1EBA6D4A0F0F7C9531C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA066FF26F24DE20008E961 /* Build configuration list for PBXNativeTarget "OpenBankMobileTests" */;
 			buildPhases = (
+				4F698854F7F8096F6D6F79C6 /* [CP] Check Pods Manifest.lock */,
 				9CA066E426F24DE20008E961 /* Sources */,
 				9CA066E526F24DE20008E961 /* Frameworks */,
 				9CA066E626F24DE20008E961 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9CA0670226F24DE20008E961 /* Build configuration list for PBXNativeTarget "OpenBankMobileUITests" */;
 			buildPhases = (
+				BCE06864F76B60F51B4C8AB4 /* [CP] Check Pods Manifest.lock */,
 				9CA066EF26F24DE20008E961 /* Sources */,
 				9CA066F026F24DE20008E961 /* Frameworks */,
 				9CA066F126F24DE20008E961 /* Resources */,
+				829EF48DD780053E7B265A24 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -252,6 +298,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F698854F7F8096F6D6F79C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenBankMobileTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6EBE1EBA6D4A0F0F7C9531C9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankMobile/Pods-OpenBankMobile-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankMobile/Pods-OpenBankMobile-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenBankMobile/Pods-OpenBankMobile-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		829EF48DD780053E7B265A24 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankMobile-OpenBankMobileUITests/Pods-OpenBankMobile-OpenBankMobileUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-OpenBankMobile-OpenBankMobileUITests/Pods-OpenBankMobile-OpenBankMobileUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-OpenBankMobile-OpenBankMobileUITests/Pods-OpenBankMobile-OpenBankMobileUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8ACD43EF7D528E258A042451 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenBankMobile-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BCE06864F76B60F51B4C8AB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-OpenBankMobile-OpenBankMobileUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9CA066CE26F24DE00008E961 /* Sources */ = {
@@ -433,6 +582,7 @@
 		};
 		9CA066FD26F24DE20008E961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2123E935F2997DD446E461B7 /* Pods-OpenBankMobile.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -452,6 +602,7 @@
 		};
 		9CA066FE26F24DE20008E961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 37971A0C8CD2B3F7397E00F3 /* Pods-OpenBankMobile.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -471,6 +622,7 @@
 		};
 		9CA0670026F24DE20008E961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E7C894A4E648A62BD91BF24 /* Pods-OpenBankMobileTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -493,6 +645,7 @@
 		};
 		9CA0670126F24DE20008E961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C01C0DE31614B989CA94B16 /* Pods-OpenBankMobileTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -515,6 +668,7 @@
 		};
 		9CA0670326F24DE20008E961 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8D6AD4406DED9B402E393B5E /* Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -535,6 +689,7 @@
 		};
 		9CA0670426F24DE20008E961 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 47E53C19611C9AA9AD0A2B58 /* Pods-OpenBankMobile-OpenBankMobileUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
