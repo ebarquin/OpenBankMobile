@@ -27,6 +27,14 @@
 		9CA0671E26F269BE0008E961 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671D26F269BE0008E961 /* RootViewController.swift */; };
 		9CA0672026F26AF40008E961 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671F26F26AF40008E961 /* RootViewModel.swift */; };
 		9CA0672426F784B60008E961 /* RootView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0672326F784B60008E961 /* RootView.storyboard */; };
+		9CA0672826F787520008E961 /* SuperHeroesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0672726F787520008E961 /* SuperHeroesRepository.swift */; };
+		9CA0672B26F788470008E961 /* FetchSuperHeroesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0672A26F788470008E961 /* FetchSuperHeroesResponse.swift */; };
+		9CA0672D26F788D10008E961 /* SuperHeroesServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0672C26F788D10008E961 /* SuperHeroesServiceRequest.swift */; };
+		9CA0672F26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0672E26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift */; };
+		9CA0673226F792070008E961 /* SuperHero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673126F792070008E961 /* SuperHero.swift */; };
+		9CA0673426F7A0A40008E961 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673326F7A0A40008E961 /* MD5.swift */; };
+		9CA0673626F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */; };
+		9CA0673A26F7BD510008E961 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673926F7BD510008E961 /* Encodable+Extension.swift */; };
 		DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +88,14 @@
 		9CA0671D26F269BE0008E961 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		9CA0671F26F26AF40008E961 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
 		9CA0672326F784B60008E961 /* RootView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootView.storyboard; sourceTree = "<group>"; };
+		9CA0672726F787520008E961 /* SuperHeroesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SuperHeroesRepository.swift; path = ../../../../../SuperHeroesRepository.swift; sourceTree = "<group>"; };
+		9CA0672A26F788470008E961 /* FetchSuperHeroesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSuperHeroesResponse.swift; sourceTree = "<group>"; };
+		9CA0672C26F788D10008E961 /* SuperHeroesServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroesServiceRequest.swift; sourceTree = "<group>"; };
+		9CA0672E26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchSuperHeroesResponse+mapper+mapper.swift"; sourceTree = "<group>"; };
+		9CA0673126F792070008E961 /* SuperHero.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHero.swift; sourceTree = "<group>"; };
+		9CA0673326F7A0A40008E961 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
+		9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSuperHeroesRequestParams.swift; sourceTree = "<group>"; };
+		9CA0673926F7BD510008E961 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile_OpenBankMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -136,6 +152,8 @@
 		9CA066D426F24DE00008E961 /* OpenBankMobile */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0673026F791EC0008E961 /* Model */,
+				9CA0672526F787170008E961 /* Repositories */,
 				9CA0671C26F269950008E961 /* Scenes */,
 				9CA0671626F2683F0008E961 /* Base */,
 				9CA0671326F267910008E961 /* Bootstrap */,
@@ -181,8 +199,10 @@
 		9CA0670E26F266A10008E961 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0673826F7BD340008E961 /* Extensions */,
 				9CA0670F26F266C10008E961 /* Constants.swift */,
 				9CA0671126F267730008E961 /* StoryboardInitiable.swift */,
+				9CA0673326F7A0A40008E961 /* MD5.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -221,6 +241,58 @@
 				9CA0671926F268B60008E961 /* Root */,
 			);
 			path = Scenes;
+			sourceTree = "<group>";
+		};
+		9CA0672526F787170008E961 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0672626F787240008E961 /* SuperHeroes */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		9CA0672626F787240008E961 /* SuperHeroes */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0673726F7BBB00008E961 /* RequestParams */,
+				9CA0672926F7882A0008E961 /* Responses */,
+				9CA0672726F787520008E961 /* SuperHeroesRepository.swift */,
+				9CA0672C26F788D10008E961 /* SuperHeroesServiceRequest.swift */,
+				9CA0672E26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift */,
+			);
+			path = SuperHeroes;
+			sourceTree = "<group>";
+		};
+		9CA0672926F7882A0008E961 /* Responses */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0672A26F788470008E961 /* FetchSuperHeroesResponse.swift */,
+			);
+			path = Responses;
+			sourceTree = "<group>";
+		};
+		9CA0673026F791EC0008E961 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0673126F792070008E961 /* SuperHero.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9CA0673726F7BBB00008E961 /* RequestParams */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */,
+			);
+			path = RequestParams;
+			sourceTree = "<group>";
+		};
+		9CA0673826F7BD340008E961 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0673926F7BD510008E961 /* Encodable+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		C13478F9BD02DCA06B487464 /* Frameworks */ = {
@@ -484,16 +556,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA0673626F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift in Sources */,
 				9CA066DA26F24DE00008E961 /* ViewController.swift in Sources */,
 				9CA066D626F24DE00008E961 /* AppDelegate.swift in Sources */,
 				9CA0672026F26AF40008E961 /* RootViewModel.swift in Sources */,
+				9CA0672D26F788D10008E961 /* SuperHeroesServiceRequest.swift in Sources */,
 				9CA0671526F267E80008E961 /* AppCoordinator.swift in Sources */,
+				9CA0673226F792070008E961 /* SuperHero.swift in Sources */,
+				9CA0672F26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift in Sources */,
+				9CA0673426F7A0A40008E961 /* MD5.swift in Sources */,
 				9CA0670926F253950008E961 /* APIConfiguration.swift in Sources */,
+				9CA0672826F787520008E961 /* SuperHeroesRepository.swift in Sources */,
 				9CA0671E26F269BE0008E961 /* RootViewController.swift in Sources */,
 				9CA0671B26F268CF0008E961 /* RootCoordinator.swift in Sources */,
 				9CA0670D26F253F80008E961 /* OnResult.swift in Sources */,
 				9CA0671826F2684E0008E961 /* Coordinator.swift in Sources */,
 				9CA0670726F253650008E961 /* APIClient.swift in Sources */,
+				9CA0672B26F788470008E961 /* FetchSuperHeroesResponse.swift in Sources */,
+				9CA0673A26F7BD510008E961 /* Encodable+Extension.swift in Sources */,
 				9CA0670B26F253CC0008E961 /* APIError.swift in Sources */,
 				9CA0671226F267730008E961 /* StoryboardInitiable.swift in Sources */,
 				9CA0671026F266C10008E961 /* Constants.swift in Sources */,

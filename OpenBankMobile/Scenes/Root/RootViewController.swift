@@ -16,6 +16,7 @@ class RootViewController: UIViewController, StoryboardInitiable {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel?.fetchSuperHeroes()
     }
     
 }
