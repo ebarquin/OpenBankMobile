@@ -10,9 +10,7 @@
 		2F671A44D4EFD12054B0117F /* Pods_OpenBankMobile.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6DDBB7E3DCFC62DEEF5533BC /* Pods_OpenBankMobile.framework */; };
 		6CADC9FDBFF4CFE7A09F216F /* Pods_OpenBankMobile_OpenBankMobileUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */; };
 		9CA066D626F24DE00008E961 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D526F24DE00008E961 /* AppDelegate.swift */; };
-		9CA066D826F24DE00008E961 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D726F24DE00008E961 /* SceneDelegate.swift */; };
 		9CA066DA26F24DE00008E961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D926F24DE00008E961 /* ViewController.swift */; };
-		9CA066DD26F24DE00008E961 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA066DB26F24DE00008E961 /* Main.storyboard */; };
 		9CA066DF26F24DE20008E961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA066DE26F24DE20008E961 /* Assets.xcassets */; };
 		9CA066E226F24DE20008E961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA066E026F24DE20008E961 /* LaunchScreen.storyboard */; };
 		9CA066ED26F24DE20008E961 /* OpenBankMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066EC26F24DE20008E961 /* OpenBankMobileTests.swift */; };
@@ -22,6 +20,13 @@
 		9CA0670B26F253CC0008E961 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0670A26F253CC0008E961 /* APIError.swift */; };
 		9CA0670D26F253F80008E961 /* OnResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0670C26F253F80008E961 /* OnResult.swift */; };
 		9CA0671026F266C10008E961 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0670F26F266C10008E961 /* Constants.swift */; };
+		9CA0671226F267730008E961 /* StoryboardInitiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671126F267730008E961 /* StoryboardInitiable.swift */; };
+		9CA0671526F267E80008E961 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671426F267E80008E961 /* AppCoordinator.swift */; };
+		9CA0671826F2684E0008E961 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671726F2684E0008E961 /* Coordinator.swift */; };
+		9CA0671B26F268CF0008E961 /* RootCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671A26F268CF0008E961 /* RootCoordinator.swift */; };
+		9CA0671E26F269BE0008E961 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671D26F269BE0008E961 /* RootViewController.swift */; };
+		9CA0672026F26AF40008E961 /* RootViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0671F26F26AF40008E961 /* RootViewModel.swift */; };
+		9CA0672426F784B60008E961 /* RootView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0672326F784B60008E961 /* RootView.storyboard */; };
 		DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -53,9 +58,7 @@
 		8D6AD4406DED9B402E393B5E /* Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig"; path = "Target Support Files/Pods-OpenBankMobile-OpenBankMobileUITests/Pods-OpenBankMobile-OpenBankMobileUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		9CA066D226F24DE00008E961 /* OpenBankMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OpenBankMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA066D526F24DE00008E961 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9CA066D726F24DE00008E961 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		9CA066D926F24DE00008E961 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		9CA066DC26F24DE00008E961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9CA066DE26F24DE20008E961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9CA066E126F24DE20008E961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CA066E326F24DE20008E961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,6 +73,13 @@
 		9CA0670A26F253CC0008E961 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		9CA0670C26F253F80008E961 /* OnResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnResult.swift; sourceTree = "<group>"; };
 		9CA0670F26F266C10008E961 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		9CA0671126F267730008E961 /* StoryboardInitiable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardInitiable.swift; sourceTree = "<group>"; };
+		9CA0671426F267E80008E961 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		9CA0671726F2684E0008E961 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		9CA0671A26F268CF0008E961 /* RootCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootCoordinator.swift; sourceTree = "<group>"; };
+		9CA0671D26F269BE0008E961 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		9CA0671F26F26AF40008E961 /* RootViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewModel.swift; sourceTree = "<group>"; };
+		9CA0672326F784B60008E961 /* RootView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RootView.storyboard; sourceTree = "<group>"; };
 		F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile_OpenBankMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -126,12 +136,12 @@
 		9CA066D426F24DE00008E961 /* OpenBankMobile */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0671C26F269950008E961 /* Scenes */,
+				9CA0671626F2683F0008E961 /* Base */,
+				9CA0671326F267910008E961 /* Bootstrap */,
 				9CA0670E26F266A10008E961 /* Helpers */,
 				9CA0670526F253450008E961 /* Networking */,
-				9CA066D526F24DE00008E961 /* AppDelegate.swift */,
-				9CA066D726F24DE00008E961 /* SceneDelegate.swift */,
 				9CA066D926F24DE00008E961 /* ViewController.swift */,
-				9CA066DB26F24DE00008E961 /* Main.storyboard */,
 				9CA066DE26F24DE20008E961 /* Assets.xcassets */,
 				9CA066E026F24DE20008E961 /* LaunchScreen.storyboard */,
 				9CA066E326F24DE20008E961 /* Info.plist */,
@@ -172,8 +182,45 @@
 			isa = PBXGroup;
 			children = (
 				9CA0670F26F266C10008E961 /* Constants.swift */,
+				9CA0671126F267730008E961 /* StoryboardInitiable.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		9CA0671326F267910008E961 /* Bootstrap */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0671426F267E80008E961 /* AppCoordinator.swift */,
+				9CA066D526F24DE00008E961 /* AppDelegate.swift */,
+			);
+			path = Bootstrap;
+			sourceTree = "<group>";
+		};
+		9CA0671626F2683F0008E961 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0671726F2684E0008E961 /* Coordinator.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		9CA0671926F268B60008E961 /* Root */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0671A26F268CF0008E961 /* RootCoordinator.swift */,
+				9CA0671D26F269BE0008E961 /* RootViewController.swift */,
+				9CA0671F26F26AF40008E961 /* RootViewModel.swift */,
+				9CA0672326F784B60008E961 /* RootView.storyboard */,
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		9CA0671C26F269950008E961 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0671926F268B60008E961 /* Root */,
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 		C13478F9BD02DCA06B487464 /* Frameworks */ = {
@@ -307,9 +354,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CA0672426F784B60008E961 /* RootView.storyboard in Resources */,
 				9CA066E226F24DE20008E961 /* LaunchScreen.storyboard in Resources */,
 				9CA066DF26F24DE20008E961 /* Assets.xcassets in Resources */,
-				9CA066DD26F24DE00008E961 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -439,11 +486,16 @@
 			files = (
 				9CA066DA26F24DE00008E961 /* ViewController.swift in Sources */,
 				9CA066D626F24DE00008E961 /* AppDelegate.swift in Sources */,
+				9CA0672026F26AF40008E961 /* RootViewModel.swift in Sources */,
+				9CA0671526F267E80008E961 /* AppCoordinator.swift in Sources */,
 				9CA0670926F253950008E961 /* APIConfiguration.swift in Sources */,
+				9CA0671E26F269BE0008E961 /* RootViewController.swift in Sources */,
+				9CA0671B26F268CF0008E961 /* RootCoordinator.swift in Sources */,
 				9CA0670D26F253F80008E961 /* OnResult.swift in Sources */,
-				9CA066D826F24DE00008E961 /* SceneDelegate.swift in Sources */,
+				9CA0671826F2684E0008E961 /* Coordinator.swift in Sources */,
 				9CA0670726F253650008E961 /* APIClient.swift in Sources */,
 				9CA0670B26F253CC0008E961 /* APIError.swift in Sources */,
+				9CA0671226F267730008E961 /* StoryboardInitiable.swift in Sources */,
 				9CA0671026F266C10008E961 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -480,14 +532,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9CA066DB26F24DE00008E961 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9CA066DC26F24DE00008E961 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		9CA066E026F24DE20008E961 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
