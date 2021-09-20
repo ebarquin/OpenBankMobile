@@ -11,6 +11,7 @@ import RxSwift
 class RootViewController: UIViewController, StoryboardInitiable{
     static var storyboardName: String = "RootView"
     @IBOutlet private weak var tableView: UITableView!
+    @IBOutlet weak var spinner: UIActivityIndicatorView!
     
     var viewModel: RootViewModel?
     let disposeBag = DisposeBag()
@@ -35,11 +36,27 @@ class RootViewController: UIViewController, StoryboardInitiable{
             
             }.disposed(by: disposeBag)
     }
-}
+    
+    private func bindIsLoading() {
+        viewModel?.onShowLoadingHud
+        .map { [weak self] in self?.isLoadingVisible($0) }
+        .subscribe()
+        .disposed(by: disposeBag)
+    }
 
-extension RootViewController {
     private func bindViewModel() {
         bindTableView()
+        bindIsLoading()
+    }
+    
+    private func isLoadingVisible(_ visible: Bool) {
+        if visible {
+            spinner.isHidden = false
+            spinner.startAnimating()
+        } else {
+            spinner.isHidden = true
+            spinner.stopAnimating()
+        }
     }
 }
 
