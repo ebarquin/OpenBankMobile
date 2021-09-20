@@ -13,7 +13,7 @@
 		9CA066DA26F24DE00008E961 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066D926F24DE00008E961 /* ViewController.swift */; };
 		9CA066DF26F24DE20008E961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9CA066DE26F24DE20008E961 /* Assets.xcassets */; };
 		9CA066E226F24DE20008E961 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA066E026F24DE20008E961 /* LaunchScreen.storyboard */; };
-		9CA066ED26F24DE20008E961 /* OpenBankMobileTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066EC26F24DE20008E961 /* OpenBankMobileTests.swift */; };
+		9CA066ED26F24DE20008E961 /* FetchSuperHeroesRequestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066EC26F24DE20008E961 /* FetchSuperHeroesRequestTests.swift */; };
 		9CA066F826F24DE20008E961 /* OpenBankMobileUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA066F726F24DE20008E961 /* OpenBankMobileUITests.swift */; };
 		9CA0670726F253650008E961 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0670626F253650008E961 /* APIClient.swift */; };
 		9CA0670926F253950008E961 /* APIConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0670826F253950008E961 /* APIConfiguration.swift */; };
@@ -40,7 +40,8 @@
 		9CA0674126F8FC760008E961 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674026F8FC760008E961 /* DetailViewModel.swift */; };
 		9CA0674326F8FC840008E961 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674226F8FC840008E961 /* DetailCoordinator.swift */; };
 		9CA0674526F8FC900008E961 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0674426F8FC900008E961 /* DetailView.storyboard */; };
-		9CA0674926F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674826F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift */; };
+		9CA0674B26F930C20008E961 /* SuperHeroResponseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674A26F930C20008E961 /* SuperHeroResponseTests.swift */; };
+		9CA0675326F935420008E961 /* MockAPIServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0675226F935420008E961 /* MockAPIServiceManager.swift */; };
 		DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -77,7 +78,7 @@
 		9CA066E126F24DE20008E961 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9CA066E326F24DE20008E961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA066E826F24DE20008E961 /* OpenBankMobileTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankMobileTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		9CA066EC26F24DE20008E961 /* OpenBankMobileTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankMobileTests.swift; sourceTree = "<group>"; };
+		9CA066EC26F24DE20008E961 /* FetchSuperHeroesRequestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSuperHeroesRequestTests.swift; sourceTree = "<group>"; };
 		9CA066EE26F24DE20008E961 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9CA066F326F24DE20008E961 /* OpenBankMobileUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OpenBankMobileUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9CA066F726F24DE20008E961 /* OpenBankMobileUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenBankMobileUITests.swift; sourceTree = "<group>"; };
@@ -107,7 +108,8 @@
 		9CA0674026F8FC760008E961 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		9CA0674226F8FC840008E961 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
 		9CA0674426F8FC900008E961 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
-		9CA0674826F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchSuperHeroResponse+mapper.swift"; sourceTree = "<group>"; };
+		9CA0674A26F930C20008E961 /* SuperHeroResponseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroResponseTests.swift; sourceTree = "<group>"; };
+		9CA0675226F935420008E961 /* MockAPIServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAPIServiceManager.swift; sourceTree = "<group>"; };
 		F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile_OpenBankMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -182,7 +184,9 @@
 		9CA066EB26F24DE20008E961 /* OpenBankMobileTests */ = {
 			isa = PBXGroup;
 			children = (
-				9CA066EC26F24DE20008E961 /* OpenBankMobileTests.swift */,
+				9CA0675126F935200008E961 /* Dummies */,
+				9CA066EC26F24DE20008E961 /* FetchSuperHeroesRequestTests.swift */,
+				9CA0674A26F930C20008E961 /* SuperHeroResponseTests.swift */,
 				9CA066EE26F24DE20008E961 /* Info.plist */,
 			);
 			path = OpenBankMobileTests;
@@ -273,7 +277,6 @@
 				9CA0672726F787520008E961 /* SuperHeroesRepository.swift */,
 				9CA0672C26F788D10008E961 /* SuperHeroesServiceRequest.swift */,
 				9CA0672E26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift */,
-				9CA0674826F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift */,
 			);
 			path = SuperHeroes;
 			sourceTree = "<group>";
@@ -319,6 +322,14 @@
 				9CA0674426F8FC900008E961 /* DetailView.storyboard */,
 			);
 			path = Detail;
+			sourceTree = "<group>";
+		};
+		9CA0675126F935200008E961 /* Dummies */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0675226F935420008E961 /* MockAPIServiceManager.swift */,
+			);
+			path = Dummies;
 			sourceTree = "<group>";
 		};
 		C13478F9BD02DCA06B487464 /* Frameworks */ = {
@@ -589,7 +600,6 @@
 				9CA066D626F24DE00008E961 /* AppDelegate.swift in Sources */,
 				9CA0672026F26AF40008E961 /* RootViewModel.swift in Sources */,
 				9CA0672D26F788D10008E961 /* SuperHeroesServiceRequest.swift in Sources */,
-				9CA0674926F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift in Sources */,
 				9CA0671526F267E80008E961 /* AppCoordinator.swift in Sources */,
 				9CA0674126F8FC760008E961 /* DetailViewModel.swift in Sources */,
 				9CA0674326F8FC840008E961 /* DetailCoordinator.swift in Sources */,
@@ -616,7 +626,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9CA066ED26F24DE20008E961 /* OpenBankMobileTests.swift in Sources */,
+				9CA0675326F935420008E961 /* MockAPIServiceManager.swift in Sources */,
+				9CA0674B26F930C20008E961 /* SuperHeroResponseTests.swift in Sources */,
+				9CA066ED26F24DE20008E961 /* FetchSuperHeroesRequestTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

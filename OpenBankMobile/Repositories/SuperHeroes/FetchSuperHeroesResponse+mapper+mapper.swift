@@ -10,7 +10,7 @@ extension SuperHeroResponse {
         return SuperHero(id: self.id, imageUrl:addExtensionTo(imageUrl: self.thumbnail.path), name: self.name, superHeroDescription: self.description)
     }
     
-    private func addExtensionTo(imageUrl: String) -> String {
+    func addExtensionTo(imageUrl: String) -> String {
         let http = imageUrl
         let https = "https" + http.dropFirst(4)
         return "\(https).jpg"
