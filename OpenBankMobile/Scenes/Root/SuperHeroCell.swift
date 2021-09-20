@@ -12,10 +12,12 @@ class SuperHeroCell: UITableViewCell {
     @IBOutlet private weak var superHeroImage: UIImageView!
     @IBOutlet private weak var superHeroNameLabel: UILabel!
     
+    var superHero: SuperHero?
     
-    func configureCell(with: SuperHero) {
-        self.superHeroNameLabel.text = with.name
-        superHeroImage.sd_setImage(with: URL(string: with.imageUrl), placeholderImage: UIImage(named: "superheroPlaceHolder"), options: .continueInBackground, context: nil)
+    func configureCell(with superHero: SuperHero) {
+        self.superHeroNameLabel.text = superHero.name
+        superHeroImage.sd_setImage(with: URL(string: superHero.imageUrl), placeholderImage: UIImage(named: "superheroPlaceHolder"), options: .continueInBackground, context: nil)
+        self.superHero = superHero
     }
 }
 

@@ -7,7 +7,7 @@
 
 extension SuperHeroResponse {
     func mapped() -> SuperHero {
-        return SuperHero(imageUrl:addExtensionTo(imageUrl: self.thumbnail.path), name: self.name, superHeroDescription: self.description)
+        return SuperHero(id: self.id, imageUrl:addExtensionTo(imageUrl: self.thumbnail.path), name: self.name, superHeroDescription: self.description)
     }
     
     private func addExtensionTo(imageUrl: String) -> String {

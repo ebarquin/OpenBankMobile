@@ -21,10 +21,17 @@ final class RootCoordinator: Coordinator {
     
     private func setupViewController() -> UIViewController {
         let viewController = RootViewController.initFromStoryboard()
+        viewController.navigateToDetail = navigateToDetail
         let apiClient = APIClientDefault()
         let superHeroRepository = SuperHeroesRepositoryDefault(apiClient: apiClient)
         viewController.viewModel = RootViewModel(superHeroesRepository: superHeroRepository)
     
         return viewController
+    }
+    
+    private func navigateToDetail(id: Int) {
+        let coordinator = DetailCoordinator(navigationController: navigationController, id: id)
+        add(child: coordinator)
+        coordinator.start()
     }
 }

@@ -6,6 +6,7 @@
 //
 
 struct SuperHero {
+    let id: Int
     let imageUrl: String
     let name: String
     let superHeroDescription: String

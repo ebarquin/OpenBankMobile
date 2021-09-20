@@ -36,6 +36,11 @@
 		9CA0673626F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */; };
 		9CA0673A26F7BD510008E961 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673926F7BD510008E961 /* Encodable+Extension.swift */; };
 		9CA0673C26F8E70F0008E961 /* SuperHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673B26F8E70F0008E961 /* SuperHeroCell.swift */; };
+		9CA0673F26F8FC6A0008E961 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673E26F8FC6A0008E961 /* DetailViewController.swift */; };
+		9CA0674126F8FC760008E961 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674026F8FC760008E961 /* DetailViewModel.swift */; };
+		9CA0674326F8FC840008E961 /* DetailCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674226F8FC840008E961 /* DetailCoordinator.swift */; };
+		9CA0674526F8FC900008E961 /* DetailView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9CA0674426F8FC900008E961 /* DetailView.storyboard */; };
+		9CA0674926F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0674826F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift */; };
 		DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -98,6 +103,11 @@
 		9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSuperHeroesRequestParams.swift; sourceTree = "<group>"; };
 		9CA0673926F7BD510008E961 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
 		9CA0673B26F8E70F0008E961 /* SuperHeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroCell.swift; sourceTree = "<group>"; };
+		9CA0673E26F8FC6A0008E961 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9CA0674026F8FC760008E961 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		9CA0674226F8FC840008E961 /* DetailCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCoordinator.swift; sourceTree = "<group>"; };
+		9CA0674426F8FC900008E961 /* DetailView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DetailView.storyboard; sourceTree = "<group>"; };
+		9CA0674826F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FetchSuperHeroResponse+mapper.swift"; sourceTree = "<group>"; };
 		F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile_OpenBankMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -241,6 +251,7 @@
 		9CA0671C26F269950008E961 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				9CA0673D26F8FC530008E961 /* Detail */,
 				9CA0671926F268B60008E961 /* Root */,
 			);
 			path = Scenes;
@@ -262,6 +273,7 @@
 				9CA0672726F787520008E961 /* SuperHeroesRepository.swift */,
 				9CA0672C26F788D10008E961 /* SuperHeroesServiceRequest.swift */,
 				9CA0672E26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift */,
+				9CA0674826F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift */,
 			);
 			path = SuperHeroes;
 			sourceTree = "<group>";
@@ -296,6 +308,17 @@
 				9CA0673926F7BD510008E961 /* Encodable+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9CA0673D26F8FC530008E961 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				9CA0673E26F8FC6A0008E961 /* DetailViewController.swift */,
+				9CA0674026F8FC760008E961 /* DetailViewModel.swift */,
+				9CA0674226F8FC840008E961 /* DetailCoordinator.swift */,
+				9CA0674426F8FC900008E961 /* DetailView.storyboard */,
+			);
+			path = Detail;
 			sourceTree = "<group>";
 		};
 		C13478F9BD02DCA06B487464 /* Frameworks */ = {
@@ -431,6 +454,7 @@
 			files = (
 				9CA0672426F784B60008E961 /* RootView.storyboard in Resources */,
 				9CA066E226F24DE20008E961 /* LaunchScreen.storyboard in Resources */,
+				9CA0674526F8FC900008E961 /* DetailView.storyboard in Resources */,
 				9CA066DF26F24DE20008E961 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -561,10 +585,14 @@
 			files = (
 				9CA0673626F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift in Sources */,
 				9CA066DA26F24DE00008E961 /* ViewController.swift in Sources */,
+				9CA0673F26F8FC6A0008E961 /* DetailViewController.swift in Sources */,
 				9CA066D626F24DE00008E961 /* AppDelegate.swift in Sources */,
 				9CA0672026F26AF40008E961 /* RootViewModel.swift in Sources */,
 				9CA0672D26F788D10008E961 /* SuperHeroesServiceRequest.swift in Sources */,
+				9CA0674926F91FBC0008E961 /* FetchSuperHeroResponse+mapper.swift in Sources */,
 				9CA0671526F267E80008E961 /* AppCoordinator.swift in Sources */,
+				9CA0674126F8FC760008E961 /* DetailViewModel.swift in Sources */,
+				9CA0674326F8FC840008E961 /* DetailCoordinator.swift in Sources */,
 				9CA0673226F792070008E961 /* SuperHero.swift in Sources */,
 				9CA0672F26F78E640008E961 /* FetchSuperHeroesResponse+mapper+mapper.swift in Sources */,
 				9CA0673426F7A0A40008E961 /* MD5.swift in Sources */,

@@ -11,10 +11,11 @@ import RxSwift
 class RootViewController: UIViewController, StoryboardInitiable{
     static var storyboardName: String = "RootView"
     @IBOutlet private weak var tableView: UITableView!
-    @IBOutlet weak var spinner: UIActivityIndicatorView!
+    @IBOutlet private weak var spinner: UIActivityIndicatorView!
     
     var viewModel: RootViewModel?
     let disposeBag = DisposeBag()
+    var navigateToDetail: ((Int)-> Void) = { _ in}
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -43,9 +44,20 @@ class RootViewController: UIViewController, StoryboardInitiable{
         .subscribe()
         .disposed(by: disposeBag)
     }
+    
+    private func bindItemSelection() {
+        tableView.rx.itemSelected.subscribe { indexPath in
+            if let indexPath = indexPath.element,
+               let cell = self.tableView.cellForRow(at: indexPath) as? SuperHeroCell {
+                guard let superHero = cell.superHero else { return }
+                self.navigateToDetail(superHero.id)
+            }
+        }.disposed(by: disposeBag)
+    }
 
     private func bindViewModel() {
         bindTableView()
+        bindItemSelection()
         bindIsLoading()
     }
     
