@@ -35,6 +35,7 @@
 		9CA0673426F7A0A40008E961 /* MD5.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673326F7A0A40008E961 /* MD5.swift */; };
 		9CA0673626F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */; };
 		9CA0673A26F7BD510008E961 /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673926F7BD510008E961 /* Encodable+Extension.swift */; };
+		9CA0673C26F8E70F0008E961 /* SuperHeroCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CA0673B26F8E70F0008E961 /* SuperHeroCell.swift */; };
 		DCB30AD60D863A46BE1193A8 /* Pods_OpenBankMobileTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBB9B7C98986D78977C0A82 /* Pods_OpenBankMobileTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -96,6 +97,7 @@
 		9CA0673326F7A0A40008E961 /* MD5.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MD5.swift; sourceTree = "<group>"; };
 		9CA0673526F7BBA60008E961 /* FetchSuperHeroesRequestParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSuperHeroesRequestParams.swift; sourceTree = "<group>"; };
 		9CA0673926F7BD510008E961 /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		9CA0673B26F8E70F0008E961 /* SuperHeroCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuperHeroCell.swift; sourceTree = "<group>"; };
 		F94D77E85D8AB8863A3115FB /* Pods_OpenBankMobile_OpenBankMobileUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_OpenBankMobile_OpenBankMobileUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -231,6 +233,7 @@
 				9CA0671D26F269BE0008E961 /* RootViewController.swift */,
 				9CA0671F26F26AF40008E961 /* RootViewModel.swift */,
 				9CA0672326F784B60008E961 /* RootView.storyboard */,
+				9CA0673B26F8E70F0008E961 /* SuperHeroCell.swift */,
 			);
 			path = Root;
 			sourceTree = "<group>";
@@ -577,6 +580,7 @@
 				9CA0670B26F253CC0008E961 /* APIError.swift in Sources */,
 				9CA0671226F267730008E961 /* StoryboardInitiable.swift in Sources */,
 				9CA0671026F266C10008E961 /* Constants.swift in Sources */,
+				9CA0673C26F8E70F0008E961 /* SuperHeroCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

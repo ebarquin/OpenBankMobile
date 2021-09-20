@@ -12,6 +12,7 @@ class RootViewModel {
     
     private let superHeroesRepository: SuperHeroesRepository
     private let disposeBag = DisposeBag()
+    let superHeroes = BehaviorRelay<[SuperHero]>(value: [])
     
     init(superHeroesRepository: SuperHeroesRepository) {
         self.superHeroesRepository = superHeroesRepository
@@ -23,6 +24,7 @@ class RootViewModel {
             case .next(let response):
                 if let response = response {
                     let superHeroes = response.data.results.map { $0.mapped()}
+                    self.superHeroes.accept(superHeroes)
                 }
                 
             case .error(let error):

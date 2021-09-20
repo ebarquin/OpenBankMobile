@@ -11,6 +11,8 @@ extension SuperHeroResponse {
     }
     
     private func addExtensionTo(imageUrl: String) -> String {
-        return "\(imageUrl).jpg"
+        let http = imageUrl
+        let https = "https" + http.dropFirst(4)
+        return "\(https).jpg"
     }
 }
